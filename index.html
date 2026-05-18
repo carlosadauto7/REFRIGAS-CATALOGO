@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Refrigas — Distribuidor de gás GLP em João Pessoa, PB. Botijões P13, P20 e P45 com entrega rápida e segura.">
+  <meta name="keywords" content="gás, GLP, botijão, P13, refrigas, João Pessoa, Paraíba, entrega gás">
+  <meta name="author" content="Refrigas">
+  <meta property="og:title" content="Refrigas — Gás com qualidade e segurança">
+  <meta property="og:description" content="Botijões de gás GLP com entrega rápida em João Pessoa, PB.">
+  <meta property="og:type" content="website">
+  <title>Refrigas — Gás com qualidade, segurança e entrega rápida</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔵</text></svg>">
+</head>
+<body>
+
+<!-- ═══ HEADER ═══════════════════════════════════════════════ -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="#inicio" class="logo">
+      <div class="logo__icon">🔵</div>
+      <span class="logo__texto">Refri<span>gas</span></span>
+    </a>
+
+    <nav id="navMenu">
+      <a class="nav__link" href="#inicio">Início</a>
+      <a class="nav__link" href="#catalogo">Produtos</a>
+      <a class="nav__link" href="#sobre">Sobre</a>
+      <a class="nav__link" href="#contato">Contato</a>
+    </nav>
+
+    <div class="header__acoes">
+      <button class="btn-tema" id="btnTema" onclick="alternarTema()" title="Alternar tema">🌙</button>
+      <button class="btn-carrinho" onclick="document.getElementById('carrinhoSidebar').classList.toggle('aberto')" title="Carrinho">
+        🛒
+        <span class="carrinho-badge" id="carrinhoBadge">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ HERO ══════════════════════════════════════════════════ -->
+<section class="hero" id="inicio">
+  <div class="hero__bg"></div>
+  <div class="hero__grade"></div>
+  <div class="container hero__inner">
+    <div class="hero__texto">
+      <div class="hero__badge">
+        🔵 Distribuidor oficial GLP — João Pessoa, PB
+      </div>
+      <h1 class="hero__titulo">
+        Gás na sua porta.<br>
+        <span class="destaque">Rápido, seguro<br>e confiável.</span>
+      </h1>
+      <p class="hero__sub">
+        Entregamos botijões de gás GLP P13, P20 e P45 com qualidade garantida e agilidade na entrega. Atendemos residências e estabelecimentos comerciais.
+      </p>
+      <div class="hero__btns">
+        <button class="btn btn-primario" onclick="rolarPara('catalogo')">
+          🛍️ Ver produtos
+        </button>
+        <a class="btn btn-whatsapp" href="https://wa.me/5583999999999?text=Olá, Refrigas! Gostaria de fazer um pedido." target="_blank" rel="noopener">
+          💬 Pedir pelo WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="hero__card-flutuante">
+        <span class="emoji">🔵</span>
+        <p style="color:rgba(255,255,255,.8);font-size:.95rem;margin-bottom:.5rem">
+          Botijões certificados<br>com procedência garantida
+        </p>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-num">+500</span>
+            <span class="hero__stat-label">Clientes atendidos</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">24h</span>
+            <span class="hero__stat-label">Entrega rápida</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">100%</span>
+            <span class="hero__stat-label">Satisfação</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ VANTAGENS ════════════════════════════════════════════ -->
+<section class="secao vantagens">
+  <div class="container">
+    <div class="secao-cabecalho" style="text-align:center">
+      <span class="tag-secao">⭐ Por que escolher a Refrigas</span>
+      <h2 class="secao-titulo">Qualidade que você pode confiar</h2>
+    </div>
+    <div class="vantagens__grid">
+      <div class="vantagem-card">
+        <span class="vantagem-icone">🚚</span>
+        <h3 class="vantagem-titulo">Entrega Rápida</h3>
+        <p class="vantagem-texto">Entregamos em até 24h em toda a região de João Pessoa, com horários flexíveis para sua conveniência.</p>
+      </div>
+      <div class="vantagem-card">
+        <span class="vantagem-icone">🔒</span>
+        <h3 class="vantagem-titulo">100% Seguro</h3>
+        <p class="vantagem-texto">Todos os botijões são certificados e passam por rigorosa inspeção de qualidade antes da entrega.</p>
+      </div>
+      <div class="vantagem-card">
+        <span class="vantagem-icone">💰</span>
+        <h3 class="vantagem-titulo">Melhor Preço</h3>
+        <p class="vantagem-texto">Preços competitivos e justos. Trabalhamos com transparência para oferecer o melhor custo-benefício.</p>
+      </div>
+      <div class="vantagem-card">
+        <span class="vantagem-icone">📞</span>
+        <h3 class="vantagem-titulo">Atendimento Ágil</h3>
+        <p class="vantagem-texto">Atendimento rápido pelo WhatsApp. Tire dúvidas, faça pedidos e acompanhe suas entregas com facilidade.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CATÁLOGO ══════════════════════════════════════════════ -->
+<section class="secao" id="catalogo">
+  <div class="container">
+    <div class="secao-cabecalho">
+      <span class="tag-secao">🛍️ Catálogo</span>
+      <h2 class="secao-titulo">Nossos Produtos</h2>
+      <p class="secao-sub">Botijões de gás, acessórios e peças com qualidade certificada.</p>
+    </div>
+
+    <!-- Controles -->
+    <div class="catalogo__controles">
+      <div class="pesquisa-wrap">
+        <span class="pesquisa-icone">🔍</span>
+        <input
+          class="pesquisa-input"
+          id="buscaInput"
+          type="search"
+          placeholder="Buscar produto...">
+      </div>
+      <select class="ordenar-select" id="ordenarSelect">
+        <option value="padrao">Ordenar: Padrão</option>
+        <option value="menor">Menor preço</option>
+        <option value="maior">Maior preço</option>
+        <option value="nome">Nome A–Z</option>
+      </select>
+    </div>
+
+    <div class="filtros-categorias" id="filtrosCategorias"></div>
+    <div class="produtos-grid" id="produtosGrid"></div>
+  </div>
+</section>
+
+<!-- ═══ SOBRE ════════════════════════════════════════════════ -->
+<section class="secao" id="sobre" style="background:var(--cinza-claro)">
+  <div class="container">
+    <div class="sobre__grid">
+      <div class="sobre__visual">
+        <span class="big-emoji">🏪</span>
+        <div class="sobre__numeros">
+          <div class="sobre__num">
+            <span class="sobre__num-val">+500</span>
+            <span class="sobre__num-label">Clientes</span>
+          </div>
+          <div class="sobre__num">
+            <span class="sobre__num-val">+3</span>
+            <span class="sobre__num-label">Anos no mercado</span>
+          </div>
+          <div class="sobre__num">
+            <span class="sobre__num-val">100%</span>
+            <span class="sobre__num-label">Certificado</span>
+          </div>
+          <div class="sobre__num">
+            <span class="sobre__num-val">24h</span>
+            <span class="sobre__num-label">Entrega</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sobre__texto">
+        <span class="tag-secao">🏪 Sobre nós</span>
+        <h2 class="secao-titulo" style="margin:.6rem 0 1.25rem">A Refrigas</h2>
+        <p>Somos uma distribuidora de gás GLP localizada em João Pessoa, Paraíba. Há mais de 3 anos atendemos famílias e estabelecimentos comerciais com qualidade, segurança e agilidade.</p>
+        <p>Nosso compromisso é garantir que você nunca fique sem gás. Por isso, trabalhamos com horários amplos, entrega rápida e atendimento personalizado pelo WhatsApp.</p>
+        <ul class="sobre__lista">
+          <li class="sobre__item">Botijões certificados e com procedência garantida</li>
+          <li class="sobre__item">Entrega em toda a região de João Pessoa</li>
+          <li class="sobre__item">Atendimento de segunda a sábado</li>
+          <li class="sobre__item">Equipe treinada e comprometida com sua segurança</li>
+          <li class="sobre__item">Preços transparentes sem surpresas</li>
+        </ul>
+        <a class="btn btn-primario" href="https://wa.me/5583999999999" target="_blank" rel="noopener">
+          💬 Fale conosco
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTATO ══════════════════════════════════════════════ -->
+<section class="secao contato" id="contato">
+  <div class="container">
+    <div class="secao-cabecalho">
+      <span class="tag-secao">📞 Contato</span>
+      <h2 class="secao-titulo">Fale com a Refrigas</h2>
+      <p class="secao-sub">Estamos prontos para atender seu pedido com rapidez.</p>
+    </div>
+
+    <div class="contato__grid">
+      <div>
+        <div class="info-item">
+          <div class="info-icone">💬</div>
+          <div>
+            <span class="info-label">WhatsApp</span>
+            <a class="info-valor" href="https://wa.me/5583999999999" target="_blank">(83) 99999-9999</a>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icone">📍</div>
+          <div>
+            <span class="info-label">Endereço</span>
+            <span class="info-valor">João Pessoa — PB</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icone">🕐</div>
+          <div>
+            <span class="info-label">Horário</span>
+            <span class="info-valor">Seg–Sáb: 7h às 19h &nbsp;|&nbsp; Dom: 8h às 14h</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icone">📸</div>
+          <div>
+            <span class="info-label">Instagram</span>
+            <a class="info-valor" href="https://instagram.com/refrigas" target="_blank">@refrigas</a>
+          </div>
+        </div>
+      </div>
+
+      <form id="formContato">
+        <div class="form-grupo">
+          <label class="form-label" for="contNome">Seu nome</label>
+          <input class="form-input" id="contNome" type="text" placeholder="João Silva" required>
+        </div>
+        <div class="form-grupo">
+          <label class="form-label" for="contEmail">E-mail</label>
+          <input class="form-input" id="contEmail" type="email" placeholder="joao@email.com">
+        </div>
+        <div class="form-grupo">
+          <label class="form-label" for="contMsg">Mensagem</label>
+          <textarea class="form-textarea" id="contMsg" placeholder="Preciso de um botijão P13..." required></textarea>
+        </div>
+        <button class="btn btn-whatsapp" type="submit" style="width:100%">
+          💬 Enviar pelo WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ RODAPÉ ════════════════════════════════════════════════ -->
+<footer class="rodape">
+  <div class="container">
+    <div class="rodape__grid">
+      <div>
+        <p class="rodape__logo-nome">Refri<span>gas</span></p>
+        <p class="rodape__sobre">
+          Distribuidor de gás GLP em João Pessoa, PB. Qualidade, segurança e entrega rápida na sua porta.
+        </p>
+        <div class="rodape__social">
+          <a class="social-btn" href="https://wa.me/5583999999999" target="_blank" title="WhatsApp">💬</a>
+          <a class="social-btn" href="https://instagram.com/refrigas" target="_blank" title="Instagram">📸</a>
+        </div>
+      </div>
+      <div>
+        <p class="rodape__titulo">Produtos</p>
+        <a class="rodape__link" href="#catalogo">Botijão P13 — 13kg</a>
+        <a class="rodape__link" href="#catalogo">Botijão P20 — 20kg</a>
+        <a class="rodape__link" href="#catalogo">Botijão P45 — 45kg</a>
+        <a class="rodape__link" href="#catalogo">Acessórios</a>
+      </div>
+      <div>
+        <p class="rodape__titulo">Informações</p>
+        <a class="rodape__link" href="#sobre">Sobre a empresa</a>
+        <a class="rodape__link" href="#contato">Contato</a>
+        <a class="rodape__link" href="https://wa.me/5583999999999" target="_blank">Fazer pedido</a>
+        <br>
+        <p class="rodape__titulo" style="margin-top:1.25rem">Horário</p>
+        <span class="rodape__link">Seg–Sáb: 7h às 19h</span>
+        <span class="rodape__link">Dom: 8h às 14h</span>
+      </div>
+    </div>
+    <div class="rodape__bottom">
+      <span>© 2025 Refrigas — Todos os direitos reservados.</span>
+      <span>João Pessoa, Paraíba — Brasil 🇧🇷</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ MODAL DE PRODUTO ══════════════════════════════════════ -->
+<div class="modal-overlay" id="modal">
+  <div class="modal" id="modalConteudo"></div>
+</div>
+
+<!-- ═══ CARRINHO SIDEBAR ══════════════════════════════════════ -->
+<aside class="carrinho-sidebar" id="carrinhoSidebar">
+  <div class="carrinho-header">
+    <h2 class="carrinho-titulo">🛒 Meu Carrinho</h2>
+    <button class="carrinho-fechar" onclick="document.getElementById('carrinhoSidebar').classList.remove('aberto')">✕</button>
+  </div>
+  <div class="carrinho-itens" id="carrinhoItens"></div>
+  <div class="carrinho-rodape">
+    <div class="carrinho-total">
+      <span class="carrinho-total-label">Total</span>
+      <span class="carrinho-total-val" id="carrinhoTotal">R$ 0,00</span>
+    </div>
+    <button class="btn btn-whatsapp" style="width:100%" onclick="finalizarPedidoCarrinho()">
+      💬 Finalizar pelo WhatsApp
+    </button>
+  </div>
+</aside>
+
+<!-- ═══ WHATSAPP FLUTUANTE ════════════════════════════════════ -->
+<a class="wpp-float" href="https://wa.me/5583999999999?text=Olá, Refrigas! Gostaria de fazer um pedido." target="_blank" rel="noopener" title="Fale pelo WhatsApp">
+  💬
+</a>
+
+<!-- ═══ TOAST CONTAINER ════════════════════════════════════════ -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- ═══ SCRIPTS ════════════════════════════════════════════════ -->
+<script src="js/produtos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
